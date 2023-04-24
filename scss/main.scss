@@ -229,6 +229,175 @@ body {
 
     }
 
+    .service-client-part {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: #181818;
+        color: #fff;
 
+        .client_slides {
+            .client-content {
+                .row:first-child {
+                    position: relative;
 
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        border-bottom: 2px solid white;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                position: relative;
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjM1OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNODkuOTcgMGM0Ni42NSAwIDg0Ljk3IDM1Ljk3MSA4NC45NyA4Ny4zNTktNTMuMzE1IDAtODYuNjM3IDM1Ljk3MS04Ni42MzcgOTQuMjEgMCA0Ny45NjIgMjQuOTkyIDExMS4zNCA2My4zMTIgMTU1Ljg3NkwxMzEuNjIyIDM1OEM2NC45NzggMzExLjc1MSAwIDE4Ni43MDggMCAxMDIuNzc1IDAgNDEuMTEgMzYuNjU0IDAgODkuOTcgMHptMjMzLjA1OSAwQzM3MS4zNDYgMCA0MDggMzUuOTcxIDQwOCA4Ny4zNTljLTUzLjMxNSAwLTg2LjYzNyAzNS45NzEtODYuNjM3IDk0LjIxIDAgNDcuOTYyIDI0Ljk5MSAxMTEuMzQgNjMuMzEyIDE1NS44NzZMMzY0LjY4MSAzNThDMjk4LjAzOCAzMTEuNzUxIDIzMy4wNiAxODYuNzA4IDIzMy4wNiAxMDIuNzc1IDIzMy4wNiA0MS4xMSAyNjkuNzE0IDAgMzIzLjAyOSAweiIgZmlsbD0iI0JBQjNBNiIgZmlsbC1vcGFjaXR5PSIuMDgiLz48L3N2Zz4=);
+                    background-position: 0 0;
+                    background-repeat: no-repeat;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDA4IiBoZWlnaHQ9IjM1OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNODkuOTcgMGM0Ni42NSAwIDg0Ljk3IDM1Ljk3MSA4NC45NyA4Ny4zNTktNTMuMzE1IDAtODYuNjM3IDM1Ljk3MS04Ni42MzcgOTQuMjEgMCA0Ny45NjIgMjQuOTkyIDExMS4zNCA2My4zMTIgMTU1Ljg3NkwxMzEuNjIyIDM1OEM2NC45NzggMzExLjc1MSAwIDE4Ni43MDggMCAxMDIuNzc1IDAgNDEuMTEgMzYuNjU0IDAgODkuOTcgMHptMjMzLjA1OSAwQzM3MS4zNDYgMCA0MDggMzUuOTcxIDQwOCA4Ny4zNTljLTUzLjMxNSAwLTg2LjYzNyAzNS45NzEtODYuNjM3IDk0LjIxIDAgNDcuOTYyIDI0Ljk5MSAxMTEuMzQgNjMuMzEyIDE1NS44NzZMMzY0LjY4MSAzNThDMjk4LjAzOCAzMTEuNzUxIDIzMy4wNiAxODYuNzA4IDIzMy4wNiAxMDIuNzc1IDIzMy4wNiA0MS4xMSAyNjkuNzE0IDAgMzIzLjAyOSAweiIgZmlsbD0iI0JBQjNBNiIgZmlsbC1vcGFjaXR5PSIuMDgiLz48L3N2Zz4=);
+                    background-position: 0 100%;
+                    background-size: 30% 40%;
+                    background-repeat: no-repeat;
+                }
+
+                .main_content {
+                    padding-right: 10px;
+                    margin: 4rem auto;
+
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
+
+                .decor_content {
+                    position: absolute;
+                    right: 0;
+                    transform: rotate(90deg) translateX(3rem);
+
+                    h5 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .journey-part {
+        background-color: #efedea;
+
+        .journey-part-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 0;
+
+            .journey-item1 {
+                grid-column: 1/span 1;
+                grid-row: 1/span 1;
+            }
+
+            .journey-item2 {
+                background-color: transparent;
+                grid-column: 2/span 1;
+                grid-row: 1/span 1;
+            }
+
+            .journey-item3 {
+                grid-column: 1/span 1;
+                grid-row: 2/span 1;
+            }
+
+            .journey-item4 {
+                background-color: transparent;
+                grid-column: 2/span 1;
+                grid-row: 2/span 1;
+            }
+
+            .journey-item1,
+            .journey-item4 {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .journey-item2,
+            .journey-item3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .journey-item2 {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                min-width: 80%;
+
+                .journey-item-content {
+                    a {
+                        position: relative;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        padding: 0.75rem 1.25rem 0.75rem 4rem;
+                        color: #000;
+                        margin-top: 1rem;
+                        display: inline-block;
+                        transition: .25s ease;
+                        z-index: 1;
+                        background-color: rgba(0, 0, 0, 0);
+                        text-decoration: none;
+
+                        &::before {
+                            content: '';
+                            height: 48px;
+                            width: 51px;
+                            mask-image: url('data:image/svg+xml;charset=utf-8,<svg width="51" height="48" xmlns="http://www.w3.org/2000/svg"><path d="M6.146 31.842c-3.198-9.063.28-19.792 9.078-25.863 8.872-6.131 20.293-5.483 27.618.898l.972-.265c-7.943-7.648-20.426-8.93-29.843-2.431-9.093 6.263-12.408 17.773-8.739 27.661h.914z"/><path d="M48.382 12.831c.015 0 .03 0 .044-.014a4.837 4.837 0 0 0-1.164-1.71 5.062 5.062 0 0 0-1.179-.84 1.65 1.65 0 0 0-.265-.147c0 .014.015.014.015.03-.825-.399-1.769-.62-2.844-.62-2.211 0-4.525.752-6.898 2.21l-.589.399c-1.238.84-2.741 2.27-4.495 4.215-1.739 1.945-3.272 3.905-4.568 5.85-1.076 1.65-2.005 3.036-2.756 4.17l-.148.237c-.191.28-.368.545-.5.751l-.222.354c-.073.118-.147.22-.22.339-.148.22-.28.427-.413.59a16.49 16.49 0 0 1-.34.47c-.265.384-.56.812-.913 1.254-.722.943-1.37 1.724-1.945 2.27a10.664 10.664 0 0 1-3.582 2.357c-4.657-1.208-8.223-1.827-10.58-1.827-3.243 0-4.82.633-4.82 1.96 0 1.385 2.034 2.063 6.234 2.063 2.24 0 4.436-.206 6.558-.62 3.272 1.047 5.747 1.74 7.354 2.064 0 0 8.562 2.447 17.773-3.227-1.37.751-7.221 3.478-16.771 1.105-1.209-.324-2.682-.707-4.45-1.179 2.52-.752 4.568-1.872 6.115-3.33 1.209-1.15 2.417-2.8 3.581-4.938h.03l.073-.132a44.021 44.021 0 0 0 1.754-3.375c2.461-5.143 5.085-8.769 7.796-10.802l.56-.413c2.196-1.356 4.348-2.049 6.41-2.049.09 0 .178.015.266.015.192 0 .413.015.649.06.059 0 .117 0 .162.014.31.059.604.133.87.236l.309.132a2.7 2.7 0 0 1 .5.266c.074.044.148.103.222.147.663.457 1.15 1.061 1.533 1.695 4.878 9.505 1.635 21.722-7.973 28.369-9.609 6.632-22.18 5.335-29.342-2.594l-.943.133c7.737 9.255 21.398 11.259 31.523 4.274 9.903-6.794 12.954-19.807 7.59-30.212zM6.425 36.396c-4.892 0-5.63-.781-5.63-1.253 0-.722 1.239-.87 2.27-.87 1.46 0 4.171.605 8.091 1.814-1.444.206-3.036.31-4.73.31z"/><path d="M37.904 35.423l.31-.176c-.089.059-.206.117-.31.176zM17.508 31.017c.501-.486 1.105-1.194 1.783-2.093.34-.412.604-.796.84-1.134l.369-.531c.132-.192.265-.368.383-.56l.427-.648c.133-.221.324-.502.53-.796l.133-.206c.781-1.165 1.695-2.55 2.771-4.186 1.341-2.019 2.918-4.038 4.716-6.057 1.842-2.063 3.463-3.566 4.79-4.48l.604-.413c1.812-1.134 3.61-1.857 5.364-2.21-1.99-.192-5.099-.192-8.385 1.12-1.651.516-2.756 1.326-3.596 1.99-.177.132-.34.25-.516.382l.015-.029s-.62-1.194-.487-2.432c0 0-.177 1.209-.059 1.68 0 0-.398-1.12-.353-1.871 0 0-.177 1.046.294 2.18.163.399.148.679.074.87-.03.015-.074.045-.118.074-.044.03-.088.074-.147.118a2.053 2.053 0 0 1-.413.177c-.722.206-1.71.575-3.183.295-1.489-.266-2.02.014-2.122.604-.074.471.427 1.37.206 1.695-.28.427-.943.22-1.105.545-.162.324-.133.457 0 1.164 0 0-.604-.324-.826.015-.22.324-.014 1.208-.471 1.591-.457.398-1.798.354-1.71 1.887.045.855.472 1.488 1.091 2.048 0 0 .03.03.059.044.03.03.044.045.074.06.31.25 1.105.972 1.444 1.915.103.457.118.929.073 1.4-.073.324-.073.442-.044.398-.427 2.682-2.608 5.306-3.183 5.954.25-.192.486-.354.678-.56z"/></svg>');
+                            mask-size: contain;
+                            vertical-align: -75%;
+                            z-index: -1;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background-color: #736f68;
+                            display: inline-block;
+                            margin-right: 0.75rem;
+                        }
+                    }
+                }
+            }
+
+            .journey-item3 {
+                .journey-item-content {
+                    img {
+                        border: 2px solid black;
+                        background-color: #000;
+                        border-radius: 11px;
+                    }
+                }
+            }
+        }
+    }
 }
