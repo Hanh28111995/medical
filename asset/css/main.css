@@ -217,6 +217,17 @@ body .vid-story-part .video-box .ovelay-video-box .video-btn .play_text {
   color: #bab3a5;
   text-decoration: underline;
 }
+body .service-part {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+body .service-part .card {
+  margin: 2rem auto;
+}
+body .service-part .card img {
+  width: 100%;
+  height: 100%;
+}
 body .service-client-part {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -373,4 +384,95 @@ body .journey-part .journey-part-content .journey-item3 .journey-item-content im
   border: 2px solid black;
   background-color: #000;
   border-radius: 11px;
+}
+body footer {
+  background-color: #181818;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+body footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0;
+}
+body footer .footer-content .footer-item1 {
+  background-color: transparent;
+  grid-row: 1/span 1;
+}
+body footer .footer-content .footer-item2 {
+  background-color: transparent;
+  grid-row: 1/span 1;
+}
+body footer .footer-content .footer-item3 {
+  background-color: transparent;
+  grid-row: 1/span 1;
+}
+body footer .footer-content .ft-head-title {
+  font-size: 1.1rem;
+  color: #bab3a5;
+  margin: 1.25rem auto;
+  font-size: 0.9rem;
+}
+body footer .footer-content .footer_icon_list a {
+  text-decoration: none;
+}
+body footer .footer-content .footer_icon_list a li {
+  display: inline-block;
+  margin-left: 10px;
+}
+body footer .footer-content .footer_icon_list a li i {
+  font-size: 15px;
+}
+body footer .footer-content .footer_icon_list a li:hover i {
+  -webkit-transform: scale(125%);
+          transform: scale(125%);
+  -webkit-transition: ease-in-out 0.3;
+  transition: ease-in-out 0.3;
+}
+body footer .footer-content ul li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2;
+}
+body footer .footer-content a {
+  color: #efedea;
+  font-size: 1rem;
+}
+body footer .footer-content .footer-item2 ul a {
+  text-decoration: none;
+}
+body footer .footer-content .footer-item2 ul a li {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  overflow: hidden;
+}
+body footer .footer-content .footer-item2 ul a li::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+body footer .footer-content .footer-item2 ul a li:hover {
+  color: #bab3a5;
+}
+body footer .footer-content .footer-item2 ul a li:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
 }
