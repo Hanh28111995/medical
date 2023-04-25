@@ -21,6 +21,21 @@
 
 body {
   padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+body h1 {
+  font-size: 80px;
+  font-weight: 200;
+}
+body h3 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+body .color-text-1 {
+  color: #bab3a5;
+}
+body .color-text-2 {
+  color: #666;
 }
 body header {
   position: fixed;
@@ -45,11 +60,11 @@ body .container {
 body .introduce-part {
   background-color: #efedea;
 }
-body .introduce-part .introduce_content_right {
+body .introduce-part .introduce-content-right {
   position: relative;
   overflow: hidden;
 }
-body .introduce-part .introduce_content_right .introduce_content_right_img img {
+body .introduce-part .introduce-content-right .introduce-content-right-img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 150%;
@@ -58,7 +73,7 @@ body .introduce-part .introduce_content_right .introduce_content_right_img img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-body .introduce-part .introduce_content_right .overlay_content_right {
+body .introduce-part .introduce-content-right .overlay-content-right {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -67,14 +82,50 @@ body .introduce-part .introduce_content_right .overlay_content_right {
   width: 100%;
   text-decoration: none;
 }
-body .introduce-part .introduce_content_right .overlay_content_right .overlay_content_right_text {
+body .introduce-part .introduce-content-right .overlay-content-right .overlay-content-right-text {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-body .introduce-part .introduce_content_right .overlay_content_right .overlay_content_right_text a {
+body .introduce-part .introduce-content-right .overlay-content-right .overlay-content-right-text a {
   text-decoration: none;
   color: white;
+}
+body .introduce-part .introduce-content-right .overlay-content-right .overlay-content-right-text p {
+  display: none;
+}
+body .introduce-part .introduce-content-left h3 {
+  margin-bottom: 3rem;
+  line-height: 6.125rem;
+}
+body .introduce-part .introduce-content-left p {
+  font-size: 1rem;
+}
+body .intro-video {
+  position: relative;
+  color: white;
+}
+body .intro-video .intro-video-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .intro-video .intro-video-content .text-content {
+  max-width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 body .story-part {
   padding-top: 5rem;
@@ -475,4 +526,9 @@ body footer .footer-content .footer-item2 ul a li:hover::after {
           transform: scaleX(1);
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
+}
+
+.animate__backInLeft {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
