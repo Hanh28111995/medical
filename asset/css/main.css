@@ -77,6 +77,9 @@ body header .navbar-collapse ul {
       -ms-flex-align: center;
           align-items: center;
 }
+body header .navbar-collapse ul li {
+  margin: 0 10px;
+}
 body header .navbar-collapse ul li .nav-link {
   color: #000;
 }
