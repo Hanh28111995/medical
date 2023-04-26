@@ -99,13 +99,18 @@
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6 p-0">
-                <a href="">
-                    <div class="introduce-content-right w-100">
-                        <div class="introduce-content-right-img">
-                            <img src="./asset/image/caroucel_intro/caroucel-1.png" alt="" width="768px"
-                                height="512px">
-                        </div>
-                        <div class="overlay-content-right">
+                <!-- <a href=""> -->
+                <div class="introduce-content-right w-100">
+                    <div class="introduce-content-right-img client_slides">
+                        <img src="./asset/image/caroucel_intro/caroucel-1.jpg" alt="" class="img-fluid">
+                        <img src="./asset/image/caroucel_intro/caroucel-2.jpg" alt="" class="img-fluid">
+                        <img src="./asset/image/caroucel_intro/caroucel-3.png" alt="" class="img-fluid">
+                        <img src="./asset/image/caroucel_intro/caroucel-4.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+
+                <!-- <div class="overlay-content-right">
                             <div class="overlay-content-right-text">
                                 <a href="">
                                     <div class="container pb-2 animate__animated">
@@ -121,12 +126,59 @@
                                     </div>
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+
+                <!-- </a> -->
             </div>
 
-            </a>
         </div>
+    </section>
+
+    <section class="introduce-banner">
+        <div class="row col-12 position-relative">
+            <img src="./asset/image/abstract-blur-hospital-clinic-interior 1.png" alt="" class="w-100">
+            <div class="introduce-banner-content1">
+                <h3>MAKE AN APPOINTMENT</h3>
+            </div>
+            <div class="introduce-banner-content2">
+                <div class="main-dr-infor">
+                    <h5>APRN. Jamie Ferraro</h5>
+                    <h5> Health and Wellness</h5>
+                    <p>Speciality : Medical aesthetics</p>
+                    <p>Qualification : FNP- C (Family Nurse Practitioner)</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="explain-part">
+        <div class="explain-title">
+            <h1>Why <span class="color-1">choose us</span> </h1>
+            <div class="explain-title-p">
+                <p>Excellent Services</p>
+                <p>Our extensive range of top-quality services is designed to cater to your unique beauty and wellness
+                    needs. We use the latest technology and state-of-the-art equipment to deliver safe, effective, and
+                    cutting-edge treatments. Our experienced team of professionals is dedicated to providing you with
+                    the highest level of care, ensuring that your experience at LiveWell Therapeutics is nothing short
+                    of exceptional.</p>
+            </div>
+            <div class="explain-title-p">
+                <p>Excellent Services</p>
+                <p>Our extensive range of top-quality services is designed to cater to your unique beauty and wellness
+                    needs. We use the latest technology and state-of-the-art equipment to deliver safe, effective, and
+                    cutting-edge treatments. Our experienced team of professionals is dedicated to providing you with
+                    the highest level of care, ensuring that your experience at LiveWell Therapeutics is nothing short
+                    of exceptional.</p>
+            </div>
+            <div class="explain-title-p">
+                <p>Excellent Services</p>
+                <p>Our extensive range of top-quality services is designed to cater to your unique beauty and wellness
+                    needs. We use the latest technology and state-of-the-art equipment to deliver safe, effective, and
+                    cutting-edge treatments. Our experienced team of professionals is dedicated to providing you with
+                    the highest level of care, ensuring that your experience at LiveWell Therapeutics is nothing short
+                    of exceptional.</p>
+            </div>
 
         </div>
     </section>
@@ -604,11 +656,15 @@
     <script type="text/javascript" src="./asset/lib/slick/slick.min.js"></script>
     <script>
         $('.client_slides').slick({
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 500,
             fade: true,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            autoplay: true,
+            arrows: false,
+            autoplaySpeed: 2000
+
         });
     </script>
     <!-- bs4 + fontansome -->
