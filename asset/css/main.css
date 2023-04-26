@@ -46,7 +46,7 @@ body h1 {
 }
 body h3 {
   font-size: 2.5rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 body .color-1 {
   color: #00A4EF;
@@ -82,6 +82,7 @@ body header .navbar-collapse ul li {
 }
 body header .navbar-collapse ul li .nav-link {
   color: #000;
+  padding: 5px 20px !important;
 }
 body header .navbar-collapse ul li.active {
   background-color: #00A4EF;
@@ -108,12 +109,12 @@ body .col-6 {
   padding-left: 0;
 }
 body .container {
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 body .container-fluid {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 65px;
+  padding-right: 65px;
 }
 body .introduce-part {
   background-color: #D4F7FF;
@@ -193,31 +194,169 @@ body .introduce-part .introduce-content-left p {
 body .introduce-banner .row .introduce-banner-content1,
 body .introduce-banner .row .introduce-banner-content2 {
   background-color: rgba(0, 164, 239, 0.26);
-  color: #00A4EF;
-  padding: 1rem;
   position: absolute;
 }
 body .introduce-banner .row .introduce-banner-content1 {
-  top: 30%;
+  width: 50%;
+  top: 10%;
   left: 0;
+  color: #00A4EF;
+  padding: 1rem;
 }
 body .introduce-banner .row .introduce-banner-content2 {
-  right: 0;
-  bottom: 10%;
+  padding: 2rem 2rem 1rem 2rem;
+  right: 15%;
+  bottom: 0%;
+  color: #000;
 }
 body .explain-part {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+body .explain-part .explain-title {
+  width: 90%;
   position: relative;
 }
-body .explain-part::before {
+body .explain-part .explain-title::before {
   position: absolute;
   content: " ";
-  width: 250px;
-  height: 500px;
+  width: 35%;
+  height: 80%;
   background-color: #d4f7ff;
   top: 0;
-  left: 10%;
+  left: 22%;
   display: block;
   z-index: -1;
+}
+body .explain-part .explain-title h1 {
+  font-size: 180px;
+  font-weight: 400;
+  line-height: 200px;
+  padding-bottom: 3rem;
+}
+body .explain-part .explain-title .explain-title-p {
+  width: 70%;
+  margin-bottom: 3rem;
+}
+body .explain-part .explain-title .explain-title-p p:first-child {
+  color: #00A4EF;
+  font-size: 20px;
+}
+body .explain-part .explain-title .explain-title-p p:last-child {
+  font-size: 16px;
+}
+body .explain-part .row:last-child .col-7 {
+  text-align: center;
+}
+body .explain-part .row:last-child .col-7 img {
+  vertical-align: middle;
+  border-style: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 90%;
+  height: 100%;
+}
+body .explain-part .row:last-child .explain-title-p {
+  width: 100%;
+}
+body .explain-part .row:last-child .explain-title-p:last-child {
+  margin-bottom: 0;
+}
+body .appoinment-form-part {
+  background-color: #181818;
+}
+body .appoinment-form-part .form_content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 90%;
+}
+body .appoinment-form-part .form_content h2 {
+  color: #C8DBE1;
+  font-size: 80px;
+  font-weight: 300;
+}
+body .appoinment-form-part .form_content p {
+  color: #425B74;
+  font-size: 24px;
+}
+body .appoinment-form-part .form_content .appoinment-table {
+  border: 1px solid white;
+  padding: 1rem 2rem;
+}
+body .appoinment-form-part .form_content .appoinment-table .header-table p {
+  color: #C8DBE1;
+  font-size: 32px;
+}
+body .appoinment-form-part .form_content .appoinment-table .schedule {
+  border-bottom: 1px solid gray;
+  color: #fff;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+body .appoinment-form-part .form_content .appoinment-table .schedule ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .appoinment-form-part .form_content .appoinment-table .schedule ul li {
+  list-style: none;
+}
+body .appoinment-form-part .form_content .appoinment-table .schedule:last-child {
+  border-bottom: none;
+}
+body .appoinment-form-part .form_content .infor-form p {
+  color: #C8DBE1;
+  font-size: 32px;
+}
+body .appoinment-form-part .form_content .infor-form {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+body .appoinment-form-part .form_content .infor-form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .appoinment-form-part .form_content .infor-form .row label {
+  color: white;
+}
+body .appoinment-form-part .form_content .infor-form .row input[type=text],
+body .appoinment-form-part .form_content .infor-form .row textarea {
+  background: rgba(128, 128, 128, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 8px 12px 10px 12px;
+  color: #fff;
+  width: 100%;
+}
+body .appoinment-form-part .form_content .infor-form .row input[type=submit] {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: #00a4ef;
+  padding: 8px 12px 10px 12px;
+  color: #fff;
+  border-radius: 10px;
+}
+body .appoinment-form-part .form_content .infor-form .row input[type=submit]:hover {
+  background: rgba(0, 164, 239, 0.5);
+}
+body .appoinment-form-part .form_content .infor-form .col-12 {
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
 body .intro-video {
   position: relative;
