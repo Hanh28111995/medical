@@ -134,8 +134,7 @@ body .introduce-part .introduce-content-right .introduce-content-right-img img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  width: 738px;
-  height: 738px;
+  height: 900px;
 }
 body .introduce-part .introduce-content-right .overlay-content-right {
   background-color: rgba(0, 0, 0, 0.5);
@@ -191,21 +190,50 @@ body .introduce-part .introduce-content-left h3 {
 body .introduce-part .introduce-content-left p {
   font-size: inherit;
 }
-body .introduce-banner .row .introduce-banner-content1,
-body .introduce-banner .row .introduce-banner-content2 {
+body .introduce-banner .row {
+  position: relative;
+}
+body .introduce-banner .row .col-9 .introduce-banner-content1 {
+  background-color: rgba(0, 164, 239, 0.26);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .introduce-banner .row .col-9 .introduce-banner-content1 h3 {
+  color: #00A4EF;
+  font-weight: 300;
+}
+body .introduce-banner .row .col-9 .introduce-banner-content1 {
+  padding: 1rem 1rem 1rem 1rem;
+  left: 0;
+  top: 0;
+  color: #000;
+}
+body .introduce-banner .row .col-9 .about-us-vid {
+  position: absolute;
+  left: 20%;
+  bottom: 5%;
+}
+body .introduce-banner .row .col-9 .about-us-vid video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 380px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+body .introduce-banner .row .col-3 .introduce-banner-content2 {
   background-color: rgba(0, 164, 239, 0.26);
   position: absolute;
 }
-body .introduce-banner .row .introduce-banner-content1 {
-  width: 50%;
-  top: 10%;
-  left: 0;
-  color: #00A4EF;
-  padding: 1rem;
-}
-body .introduce-banner .row .introduce-banner-content2 {
+body .introduce-banner .row .col-3 .introduce-banner-content2 {
   padding: 2rem 2rem 1rem 2rem;
-  right: 15%;
+  left: -50%;
   bottom: 0%;
   color: #000;
 }
@@ -357,6 +385,151 @@ body .appoinment-form-part .form_content .infor-form .row input[type=submit]:hov
 body .appoinment-form-part .form_content .infor-form .col-12 {
   margin-bottom: 15px;
   margin-right: 5px;
+}
+body .services-part {
+  padding-top: 79px;
+  padding-bottom: 79px;
+}
+body .services-part .services-list-left .content-img {
+  text-align: center;
+  padding-top: 6rem;
+}
+body .services-part .services-list-left .content-img h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+body .services-part .services-list-left .bg-img-1,
+body .services-part .services-list-left .bg-img-2 {
+  position: absolute;
+  bottom: 45%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+body .services-part .services-list-right .col-4 {
+  padding: 0;
+}
+body .services-part .services-list-right .col-4 .list-item {
+  background-color: rgba(0, 164, 239, 0.5);
+  height: 412px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+body .services-part .services-list-right .col-4 .list-item ul li {
+  list-style: none;
+}
+body .services-part .services-list-right .col-4 .list-item video {
+  height: 100%;
+}
+body .services-part .services-list-right .col-4:nth-of-type(10) .list-item video, body .services-part .services-list-right .col-4:nth-of-type(8) .list-item video {
+  height: auto;
+  width: 150%;
+}
+body .priorrity-part {
+  background: #fff;
+}
+body .priorrity-part .content_title_header {
+  text-align: center;
+}
+body .priorrity-part .content_title_header h5 {
+  font-size: 40px;
+}
+body .priorrity-part .bg-theme-colored1 {
+  background-color: #00A4EF;
+}
+body .priorrity-part .bg-theme-colored2 {
+  background-color: #009ae0;
+}
+body .priorrity-part .bg-theme-colored3 {
+  background-color: #0093d6;
+}
+body .priorrity-part .bg-theme-colored4 {
+  background-color: #008ccb;
+}
+body .priorrity-part ul {
+  width: 100%;
+}
+body .priorrity-part ul li {
+  margin-bottom: 0;
+  width: 20%;
+  text-align: center;
+}
+body .priorrity-part ul li a {
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  margin-right: 0;
+  padding: 30px 20px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+body .priorrity-part ul li a:hover {
+  text-decoration: underline;
+}
+body .priorrity-part ul li a span {
+  display: block;
+  margin-top: 10px;
+}
+body .priorrity-part .tab-content {
+  padding: 15px 0px;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-left-part {
+  padding: 35px 100px;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-left-part h3 {
+  color: #008ccb;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-left-part .lead {
+  margin-bottom: 50px;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-left-part ul {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-left-part ul li {
+  white-space: nowrap;
+  text-align: left;
+  margin-bottom: 30px;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-contact a {
+  color: #fff;
+  background-color: #00A4EF;
+  border-color: #00A4EF;
+  padding: 1rem 1.7rem;
+  font-size: 0.875rem;
+  position: relative;
+  z-index: 1;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-contact a:before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 147, 214, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  z-index: -1;
+}
+body .priorrity-part .tab-content .col-lg-6 .tab-contact a:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 body .intro-video {
   position: relative;
