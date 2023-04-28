@@ -1144,10 +1144,11 @@ body {
 
       .journey-item4 {
         .journey-item-content {
-          h2 {
-            font-size: 60px;
-            margin-bottom: 29px;
-            padding: 25px;
+          h3 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            line-height: 1.5 !important;
+            font-size: 2.2rem;
           }
 
           p {
@@ -1432,6 +1433,74 @@ div.animation::after {
       font-weight: 400 !important;
     }
 
+    .community_part .cmt {
+      font-size: 16px;
+      padding: 15px !important;
+    }
+
+    .pricing-part {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .pricing-part .pricing-part-title {
+      margin-bottom: 0px !important;
+    }
+
+    .pricing-part .pricing-item .pricing-content p .price::after {
+      font-size: 17px !important;
+      bottom: 42% !important;
+      padding-left: 3px !important;
+    }
+
+    .pricing-part .pricing-item .pricing-content ul {
+      min-width: 320px;
+
+      li {
+        font-size: 16px;
+        padding: 1rem 0rem !important;
+      }
+    }
+
+    .pricing-part .pricing-item .pricing-content p {
+      margin-bottom: 0;
+      font-size: 16px !important;
+    }
+
+    .pricing-part .pricing-item .pricing-content h5 {
+      font-size: 2rem !important;
+      margin-bottom: 15px !important;
+    }
+
+    .pricing-part .pricing-item .pricing-content p .price {
+      font-size: 25px !important;
+      line-height: 1 !important;
+    }
+
+    .countup-part .countup-item {
+      display: flex;
+      justify-content: left;
+      padding-left: 25% !important;
+      margin-bottom: 25px;
+
+      .icon svg {
+        font-size: 2em !important;
+      }
+
+      .text-start {
+        h1 {
+          font-size: 45px !important;
+        }
+
+        p {
+          font-size: 15px !important
+        }
+
+        ;
+      }
+
+    }
+
     .priorrity-part .content_title_header {
       padding-left: 15px;
       padding-right: 15px;
@@ -1455,11 +1524,13 @@ div.animation::after {
     .priorrity-part .tab-content .col-lg-6 .tab-left-part ul {
       margin-top: 15px !important;
       margin-bottom: 15px !important;
-      li{
+
+      li {
         font-size: 12px !important;
         margin-bottom: 15px !important;
       }
     }
+
     .priorrity-part .tab-content .col-lg-6 .tab-contact a {
       padding: unset;
       font-size: unset;
@@ -1524,6 +1595,16 @@ div.animation::after {
       }
     }
 
+    .introduce-banner .row .col-md-3 .introduce-banner-content2 {
+      background-color: rgba(0, 164, 239, 0.5) !important;
+    }
+    .introduce-banner .row .col-md-3 .introduce-banner-content2 h6{
+      margin-bottom: 15px;
+    }
+    .introduce-banner .row .col-md-3 .introduce-banner-content2{
+      padding: 1rem 1rem 0.5rem 1rem !important;
+    }
+
     .services-part {
       .content-img {
 
@@ -1532,6 +1613,33 @@ div.animation::after {
           transform: translateY(50%) scale(0.5);
         }
       }
+    }
+
+    .journey-part1 .journey-part-content .journey-item4 .journey-item-content {
+      margin-top: 2.5rem;
+      margin-bottom: 5rem;
+      font-size: 2.2rem;
+      line-height: 1.5 !important;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      p {
+        font-size: 12px !important;
+      }
+    }
+
+    .community_part .infor p:first-child {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .community_part .client-cmt {
+      width: 95%;
+    }
+
+    .community_part .cmt {
+      font-size: 14px;
+      padding-right: 25px;
     }
 
     .journey-part1 {
@@ -1725,28 +1833,51 @@ div.animation::after {
     }
 
     footer .footer-content {
-      grid-template-columns: repeat(2, 1fr) !important;
-      grid-template-rows: repeat(2, 1fr) !important;
+      grid-template-rows: repeat(4, 1fr) !important;
+      grid-template-columns: unset !important;
+      padding-left: 50px;
+      padding-right: 50px;
     }
 
     footer .footer-content .footer-item1 {
       grid-row: 1/span 1 !important;
-      grid-column: 1/span 1 !important;
     }
 
     footer .footer-content .footer-item2 {
-      grid-row: 1/span 1 !important;
-      grid-column: 2/span 1 !important;
+      grid-row: 2/span 1 !important;
     }
 
     footer .footer-content .footer-item3 {
-      grid-row: 2/span 1 !important;
-      grid-column: 1/span 1 !important;
+      grid-row: 3/span 1 !important;
     }
 
     footer .footer-content .footer-item4 {
-      grid-row: 2/span 1 !important;
-      grid-column: 2/span 1 !important;
+      grid-row: 4/span 1 !important;
+    }
+  }
+
+  .journey-part .journey-part-content {
+    display: block !important;
+
+    .journey-item3 {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+
+      .journey-item-content {
+        padding-right: 25px;
+        padding-left: 25px;
+
+        .news-app-promo-subsection {
+          display: flex !important;
+          margin-top: 2rem !important;
+          justify-content: center;
+
+          a img {
+            width: 80% !important;
+            border: none;
+          }
+        }
+      }
     }
   }
 }

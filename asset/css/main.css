@@ -1009,10 +1009,11 @@ body .journey-part1 .journey-part-content .journey-item4 {
       -ms-flex-align: center;
           align-items: center;
 }
-body .journey-part1 .journey-part-content .journey-item4 .journey-item-content h2 {
-  font-size: 60px;
-  margin-bottom: 29px;
-  padding: 25px;
+body .journey-part1 .journey-part-content .journey-item4 .journey-item-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5 !important;
+  font-size: 2.2rem;
 }
 body .journey-part1 .journey-part-content .journey-item4 .journey-item-content p {
   font-size: 22px;
@@ -1237,6 +1238,60 @@ div.animation::after {
     margin-bottom: 1.5rem;
     font-weight: 400 !important;
   }
+  body .community_part .cmt {
+    font-size: 16px;
+    padding: 15px !important;
+  }
+  body .pricing-part {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body .pricing-part .pricing-part-title {
+    margin-bottom: 0px !important;
+  }
+  body .pricing-part .pricing-item .pricing-content p .price::after {
+    font-size: 17px !important;
+    bottom: 42% !important;
+    padding-left: 3px !important;
+  }
+  body .pricing-part .pricing-item .pricing-content ul {
+    min-width: 320px;
+  }
+  body .pricing-part .pricing-item .pricing-content ul li {
+    font-size: 16px;
+    padding: 1rem 0rem !important;
+  }
+  body .pricing-part .pricing-item .pricing-content p {
+    margin-bottom: 0;
+    font-size: 16px !important;
+  }
+  body .pricing-part .pricing-item .pricing-content h5 {
+    font-size: 2rem !important;
+    margin-bottom: 15px !important;
+  }
+  body .pricing-part .pricing-item .pricing-content p .price {
+    font-size: 25px !important;
+    line-height: 1 !important;
+  }
+  body .countup-part .countup-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-left: 25% !important;
+    margin-bottom: 25px;
+  }
+  body .countup-part .countup-item .icon svg {
+    font-size: 2em !important;
+  }
+  body .countup-part .countup-item .text-start h1 {
+    font-size: 45px !important;
+  }
+  body .countup-part .countup-item .text-start p {
+    font-size: 15px !important;
+  }
   body .priorrity-part .content_title_header {
     padding-left: 15px;
     padding-right: 15px;
@@ -1307,10 +1362,41 @@ div.animation::after {
   body .services-list .services-list-left {
     padding-bottom: 100%;
   }
+  body .introduce-banner .row .col-md-3 .introduce-banner-content2 {
+    background-color: rgba(0, 164, 239, 0.5) !important;
+  }
+  body .introduce-banner .row .col-md-3 .introduce-banner-content2 h6 {
+    margin-bottom: 15px;
+  }
+  body .introduce-banner .row .col-md-3 .introduce-banner-content2 {
+    padding: 1rem 1rem 0.5rem 1rem !important;
+  }
   body .services-part .content-img .bg-img-1,
   body .services-part .content-img .bg-img-2 {
     -webkit-transform: translateY(50%) scale(0.5);
             transform: translateY(50%) scale(0.5);
+  }
+  body .journey-part1 .journey-part-content .journey-item4 .journey-item-content {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    font-size: 2.2rem;
+    line-height: 1.5 !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  body .journey-part1 .journey-part-content .journey-item4 .journey-item-content p {
+    font-size: 12px !important;
+  }
+  body .community_part .infor p:first-child {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  body .community_part .client-cmt {
+    width: 95%;
+  }
+  body .community_part .cmt {
+    font-size: 14px;
+    padding-right: 25px;
   }
   body .journey-part1 .journey-part-content {
     grid-template-columns: repeat(1, 1fr);
@@ -1484,24 +1570,46 @@ div.animation::after {
     font-size: 12px !important;
   }
   body footer .footer-content {
-    grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(4, 1fr) !important;
+    grid-template-columns: unset !important;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   body footer .footer-content .footer-item1 {
     grid-row: 1/span 1 !important;
-    grid-column: 1/span 1 !important;
   }
   body footer .footer-content .footer-item2 {
-    grid-row: 1/span 1 !important;
-    grid-column: 2/span 1 !important;
+    grid-row: 2/span 1 !important;
   }
   body footer .footer-content .footer-item3 {
-    grid-row: 2/span 1 !important;
-    grid-column: 1/span 1 !important;
+    grid-row: 3/span 1 !important;
   }
   body footer .footer-content .footer-item4 {
-    grid-row: 2/span 1 !important;
-    grid-column: 2/span 1 !important;
+    grid-row: 4/span 1 !important;
+  }
+  .journey-part .journey-part-content {
+    display: block !important;
+  }
+  .journey-part .journey-part-content .journey-item3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .journey-part .journey-part-content .journey-item3 .journey-item-content {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .journey-part .journey-part-content .journey-item3 .journey-item-content .news-app-promo-subsection {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin-top: 2rem !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .journey-part .journey-part-content .journey-item3 .journey-item-content .news-app-promo-subsection a img {
+    width: 80% !important;
+    border: none;
   }
 }
 .purple {
