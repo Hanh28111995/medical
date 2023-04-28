@@ -1272,11 +1272,12 @@ body {
     color: #fff;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    display: grid;
 
     .footer-content {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(1, 1fr);
+      grid-template-rows: auto auto;
       gap: 0;
 
       .footer-item1 {
@@ -1387,39 +1388,7 @@ body {
   }
 }
 
-.animate__backInLeft {
-  animation-duration: 2s;
-}
 
-footer {
-  background: radial-gradient(circle, #181818, #181818);
-  //isolation: isolate;
-  overflow: hidden;
-  position: relative;
-
-  &:active {
-
-    div,
-    div::before,
-    div::after {
-      // Commented out for performance
-      //mix-blend-mode: color-dodge;
-      padding: 40px;
-    }
-  }
-}
-
-div.animation,
-div.animation::before,
-div.animation::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.9;
-  transform-origin: top;
-  transition: all 5s linear 0s;
-}
 
 
 
@@ -1598,10 +1567,12 @@ div.animation::after {
     .introduce-banner .row .col-md-3 .introduce-banner-content2 {
       background-color: rgba(0, 164, 239, 0.5) !important;
     }
-    .introduce-banner .row .col-md-3 .introduce-banner-content2 h6{
+
+    .introduce-banner .row .col-md-3 .introduce-banner-content2 h6 {
       margin-bottom: 15px;
     }
-    .introduce-banner .row .col-md-3 .introduce-banner-content2{
+
+    .introduce-banner .row .col-md-3 .introduce-banner-content2 {
       padding: 1rem 1rem 0.5rem 1rem !important;
     }
 
@@ -1891,7 +1862,39 @@ div.animation::after {
 
 
 
+.animate__backInLeft {
+  animation-duration: 2s;
+}
 
+footer {
+  background: radial-gradient(circle, #181818, #181818);
+  //isolation: isolate;
+  overflow: hidden;
+  position: relative;
+
+  // &:active {
+
+  //   div,
+  //   div::before,
+  //   div::after {
+  //     // Commented out for performance
+  //     //mix-blend-mode: color-dodge;
+  //     padding: 40px;
+  //   }
+  // }
+}
+
+div.animation,
+div.animation::before,
+div.animation::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transform-origin: top;
+  transition: all 5s linear 0s;
+}
 .purple {
   -webkit-animation: purple linear 30s alternate infinite;
   animation: purple linear 30s alternate infinite;

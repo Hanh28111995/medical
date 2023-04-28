@@ -1111,11 +1111,12 @@ body footer {
   color: #fff;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  display: grid;
 }
 body footer .footer-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: auto auto;
   gap: 0;
 }
 body footer .footer-content .footer-item1 {
@@ -1200,36 +1201,6 @@ body footer .footer-content .footer-item2 ul a li:hover::after {
           transform: scaleX(1);
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
-}
-
-.animate__backInLeft {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-footer {
-  background: radial-gradient(circle, #181818, #181818);
-  overflow: hidden;
-  position: relative;
-}
-footer:active div,
-footer:active div::before,
-footer:active div::after {
-  padding: 40px;
-}
-
-div.animation,
-div.animation::before,
-div.animation::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.9;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transition: all 5s linear 0s;
-  transition: all 5s linear 0s;
 }
 
 @media only screen and (max-width: 576px) {
@@ -1612,6 +1583,31 @@ div.animation::after {
     border: none;
   }
 }
+.animate__backInLeft {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+footer {
+  background: radial-gradient(circle, #181818, #181818);
+  overflow: hidden;
+  position: relative;
+}
+
+div.animation,
+div.animation::before,
+div.animation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: all 5s linear 0s;
+  transition: all 5s linear 0s;
+}
+
 .purple {
   -webkit-animation: purple linear 30s alternate infinite;
   animation: purple linear 30s alternate infinite;
