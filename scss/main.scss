@@ -48,6 +48,7 @@ header {
   height: 100px;
   display: flex;
   align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 
   .navbar-collapse {
     ul {
@@ -1405,7 +1406,8 @@ footer {
       left: 1px;
       width: 100%;
       background-color: white !important;
-      .navbar-brand{
+
+      .navbar-brand {
         width: 70%;
       }
 
