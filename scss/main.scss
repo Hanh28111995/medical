@@ -35,22 +35,6 @@ body {
     color: $t-color-dark;
   }
 
-  .navbar-collapse {
-    position: absolute;
-    top: 90px;
-    left: 1px;
-    width: 100%;
-    background-color: white !important;
-
-    // .navbar-toggler .navbar-toggler-icon {
-    //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    // }
-    // <svg /></svg>
-
-    // .navbar-toggler.collapsed .navbar-toggler-icon {
-    //   background-image: ;
-    // }
-  }
 }
 
 
@@ -1404,6 +1388,7 @@ footer {
     }
   }
 }
+
 // }
 
 
@@ -1412,8 +1397,25 @@ footer {
 
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
   body {
+    .navbar-collapse {
+      position: absolute;
+      top: 90px;
+      left: 1px;
+      width: 100%;
+      background-color: white !important;
+
+      // .navbar-toggler .navbar-toggler-icon {
+      //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      // }
+      // <svg /></svg>
+
+      // .navbar-toggler.collapsed .navbar-toggler-icon {
+      //   background-image: ;
+      // }
+    }
+
     h5 {
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
@@ -1744,53 +1746,6 @@ footer {
       transform: unset !important;
     }
 
-    .services-part .services-list-right .services-item:nth-of-type(1) {
-      order: 1;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(4) {
-      order: 2;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(2) {
-      order: 3;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(5) {
-      order: 4;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(3) {
-      order: 5;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(6) {
-      order: 6;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(10) {
-      order: 7;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(7) {
-      order: 8;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(11) {
-      order: 9;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(8) {
-      order: 10;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(12) {
-      order: 11;
-    }
-
-    .services-part .services-list-right .services-item:nth-of-type(9) {
-      order: 12;
-    }
 
     .services-part .services-list-right .services-item .list-item {
       align-items: center !important;
@@ -1871,10 +1826,55 @@ footer {
   }
 }
 
-// @media only screen and (max-width: 992)
-// {
+@media only screen and (max-width: 576px) {
+  .services-part .services-list-right .services-item:nth-of-type(1) {
+    order: 1;
+  }
 
-// }
+  .services-part .services-list-right .services-item:nth-of-type(4) {
+    order: 2;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(2) {
+    order: 3;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(5) {
+    order: 4;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(3) {
+    order: 5;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(6) {
+    order: 6;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(10) {
+    order: 7;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(7) {
+    order: 8;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(11) {
+    order: 9;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(8) {
+    order: 10;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(12) {
+    order: 11;
+  }
+
+  .services-part .services-list-right .services-item:nth-of-type(9) {
+    order: 12;
+  }
+}
 
 
 
