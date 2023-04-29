@@ -1235,7 +1235,7 @@ footer .footer-content .footer-item2 ul a li:hover::after {
 @media only screen and (max-width: 992px) {
   body .navbar-collapse {
     position: absolute;
-    top: 90px;
+    top: 85px;
     left: 1px;
     width: 100%;
     background-color: white !important;
