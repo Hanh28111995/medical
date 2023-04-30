@@ -1243,29 +1243,39 @@ header {
 
     ul {
       justify-content: center;
-    }
 
-    .nav-pills .nav-link.active {
-      background-color: #343434;
-      color: white;
-    }
-
-    .nav-pills .nav-link {
-      color: #343434;
-      transition: ease-in-out 0.3s;
-
-      &:hover {
-        background-color: #343434;
-        color: white;
-        margin: auto 5px;
+      li {
+        border-radius: 10px !important; 
+        background: #343434;
       }
     }
+
+    // .nav-pills .nav-link.active {
+    //   background-color: #343434;
+    //   color: white;
+    // }
+
+    // .nav-pills .nav-link {
+    //   color: #343434;
+    //   transition: ease-in-out 0.3s;
+
+    //   &:hover {
+    //     background-color: #343434;
+    //     color: white;
+    //     margin: auto 5px;
+    //   }
+    // }
   }
 
   .tab-content {
-    img {
-      padding: 5px;
-      width: 100%;
+    .card {
+      padding: 0;
+      border: unset;
+
+      img {
+        padding: 5px 5px;
+        width: 100%;
+      }
     }
   }
 }

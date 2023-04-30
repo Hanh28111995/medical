@@ -928,7 +928,13 @@
                 genuine care that defines LiveWell Therapeutics.</p>
         </div>
         <div class="btn-list">
-            <ul class="nav nav-pills " role="tablist">
+            <ul class="btn-group simplefilter d-flex p-2 container">
+                <li class="btn m-1 fltr-controls btn-primary badge-pill" data-filter="all">All</li>
+                <li class="btn m-1 fltr-controls btn-primary badge-pill" data-filter="2">BOTOX FILTER</li>
+                <li class="btn m-1 fltr-controls btn-primary badge-pill" data-filter="3">SURGERY</li>
+                <li class="btn m-1 fltr-controls btn-primary badge-pill" data-filter="4">SPA</li>
+            </ul>
+            <!-- <ul class="nav nav-pills " role="tablist">
                 <li class="nav-item">
                     <a class="nav-link" href="#menu1">ALL</a>
                 </li>
@@ -941,50 +947,38 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#menu4">SPA</a>
                 </li>
-            </ul>
+            </ul> -->
 
             <!-- Tab panes -->
-            <div class="tab-content">
-                <div id="menu1" class="container tab-pane active"><br>
-                    <div class="row col-12">
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE1.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE2.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE3.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE4.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE5.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE6.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE7.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE8.png" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="./asset/image/gallery/IMAGE9.png" alt="">
-                        </div>
-
+            <div class="tab-content container p-0">
+                <div class="row filter-container">
+                    <div class="col-md-4 card filtr-item" data-category="2" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE1.png" alt="An Image">
                     </div>
-                </div>
-                <div id="menu2" class="container tab-pane fade"><br>
-
-                </div>
-                <div id="menu3" class="container tab-pane fade"><br>
-
-                </div>
-                <div id="menu4" class="container tab-pane fade"><br>
-
+                    <div class="col-md-4 card filtr-item" data-category="2,4" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE2.png" alt="An Image">
+                    </div>
+                    <div class="col-md-4 card filtr-item" data-category="2" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE3.png" alt="An Image">
+                    </div>
+                    <div class="col-md-4 card filtr-item" data-category="3" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE4.png" alt="An Image">
+                    </div>
+                    <div class="col-md-4 card filtr-item" data-category="2,3" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE5.png" alt="An Image">
+                    </div>
+                    <div class="col-md-4 card filtr-item" data-category="3" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE6.png" alt="An Image">
+                    </div>
+                    <div class="col-md-4 card filtr-item" data-category="3,4" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE7.png" alt="An Image">
+                    </div>
+                    <div class="card col-md-4 card filtr-item" data-category="4" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE8.png" alt="An Image">
+                    </div>
+                    <div class="card col-md-4 card filtr-item" data-category="5" data-sort="value" data-author="q">
+                        <img src="./asset/image/gallery/IMAGE9.png" alt="An Image">
+                    </div>
                 </div>
             </div>
         </div>
@@ -1122,8 +1116,47 @@
         </div>
     </footer>
 
+    <!-- filter smooth -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./asset/lib/filterizr/jquery.filterizr.min.js"></script>
+    <script>
+        // Configure your options
+        // const options = {
+        //     /* check next step for available options */
+        //     controlsSelector: '.fltr-controls',
+        //     gridItemsSelector: '.filtr-item',
+        //     spinner: {
+        //         enabled: true,
+        //     },
+        // };
 
+        // Adjust the CSS selector to match the container where
+        // you set up your image gallery
+        // const filterizr = new Filterizr('.filter-container', options);
+        const filterizr = $('.filter-container').filterizr({
+            controlsSelector: '.fltr-controls',
+            gridItemsSelector: '.filtr-item',
+            spinner: {
+                enabled: true,
+            },
+        });
+        // document.querySelector("#shuffle").addEventListener('click', function (event) {
+        //     filterizr.shuffle();
+        // })
+        $("#shuffle").click(() => {
+            filterizr.filterizr('shuffle');
+        })
 
+        const sortFilterizr = (order) => {
+            // let selected_option = document.querySelector("select").options.selectedIndex;
+            // let selected_val = document.querySelector("select").options[selected_option].value;
+            //$("#elementId :selected").val();
+            filterizr.filterizr('sort', $("select :selected").val(), order);
+            //filterizrInstance.filterizr('sort', attribute, order);
+
+        }
+    </script>
 
 
     <!-- slick slider -->

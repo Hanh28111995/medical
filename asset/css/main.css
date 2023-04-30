@@ -1113,22 +1113,16 @@ header .navbar-collapse ul li.active .nav-link {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.gallery-part .btn-list .nav-pills .nav-link.active {
-  background-color: #343434;
-  color: white;
+.gallery-part .btn-list ul li {
+  border-radius: 10px !important;
+  background: #343434;
 }
-.gallery-part .btn-list .nav-pills .nav-link {
-  color: #343434;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
+.gallery-part .tab-content .card {
+  padding: 0;
+  border: unset;
 }
-.gallery-part .btn-list .nav-pills .nav-link:hover {
-  background-color: #343434;
-  color: white;
-  margin: auto 5px;
-}
-.gallery-part .tab-content img {
-  padding: 5px;
+.gallery-part .tab-content .card img {
+  padding: 5px 5px;
   width: 100%;
 }
 
