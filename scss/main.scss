@@ -1246,7 +1246,12 @@ header {
 
       li {
         border-radius: 10px !important; 
-        background: #343434;
+        border: none;
+        background: #F7F7F7;
+        color: #777777;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -1394,9 +1399,6 @@ footer {
             }
           }
         }
-
-
-
         ;
       }
 
