@@ -170,17 +170,9 @@ header .navbar-collapse ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 18px;
 }
 header .navbar-collapse ul li {
-  margin: 0 10px;
-}
-header .navbar-collapse ul li .nav-link {
-  color: #000;
-  padding: 5px 20px !important;
-}
-header .navbar-collapse ul li.active {
-  background-color: #00A4EF;
+  margin: 0 3px;
   border-radius: 25px;
   padding: 5px;
   -webkit-box-pack: center;
@@ -192,6 +184,38 @@ header .navbar-collapse ul li.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .navbar-collapse ul li .nav-link {
+  font-size: 18px;
+  color: #000;
+  padding: 5px 10px !important;
+}
+header .navbar-collapse ul li:hover {
+  background-color: rgba(0, 164, 239, 0.5);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+header .navbar-collapse ul li:hover .nav-link {
+  color: #fff !important;
+}
+header .navbar-collapse ul li.search-dropdown .nav-link {
+  padding: 5px 5px !important;
+}
+header .navbar-collapse ul li.search-dropdown .dropdown-toggle::after {
+  display: none;
+}
+header .navbar-collapse ul li.search-dropdown .dropdown-menu {
+  left: unset;
+  right: 0;
+  bottom: 0;
+  border: unset;
+}
+header .navbar-collapse ul li.search-dropdown .dropdown-menu form .form-control {
+  font-size: 14px;
+  height: calc(1em + 0.75rem + 2px);
+}
+header .navbar-collapse ul li.active {
+  background-color: #00A4EF;
 }
 header .navbar-collapse ul li.active .nav-link {
   color: #fff !important;
@@ -366,7 +390,7 @@ header .navbar-collapse ul li.active .nav-link {
   z-index: -1;
 }
 .explain-part .explain-title h1 {
-  font-size: 160px;
+  font-size: 120px;
   font-weight: 400;
   line-height: 200px;
   padding-bottom: 3rem;
@@ -1324,10 +1348,20 @@ footer .footer-content .footer-item2 ul a li:hover::after {
 }
 
 @media only screen and (max-width: 992px) {
+  body header ul {
+    padding-bottom: 9px;
+    padding-top: 9px;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-left: none;
+    border-right: none;
+  }
+  body header ul .search-dropdown .dropdown-menu {
+    margin-right: 9px;
+  }
   body .navbar-collapse {
     position: absolute;
     top: 85px;
-    left: 1px;
+    left: 0;
     width: 100%;
     background-color: white !important;
   }
@@ -1502,7 +1536,7 @@ footer .footer-content .footer-item2 ul a li:hover::after {
     padding: 0 5px;
   }
   body .introduce-part .introduce-content-left {
-    padding: 100px 25px;
+    padding: 50px 25px;
   }
   body .introduce-part .introduce-content-left h4 {
     font-size: 20px;
