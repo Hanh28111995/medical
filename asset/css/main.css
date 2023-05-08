@@ -1438,7 +1438,7 @@ footer .footer-content .footer-item2 ul a li:hover::after {
     margin-bottom: 15px !important;
   }
   body .priorrity-part .tab-content .col-lg-6 .tab-contact a {
-    padding: unset;
+    padding: 10px 10px;
     font-size: unset;
     margin-bottom: 2rem;
   }
