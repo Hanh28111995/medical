@@ -1214,6 +1214,10 @@ header .navbar-collapse ul li.active .nav-link {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.gallery-part ul li.active {
+  background-color: #00A4EF;
+  color: white;
+}
 .gallery-part .btn-list {
   padding-top: 2rem;
   padding-bottom: 2rem;

@@ -1365,7 +1365,10 @@ header {
 .gallery-part {
   padding-top: 3rem;
   padding-bottom: 3rem;
-
+  ul li.active {
+    background-color: #00A4EF;
+    color: white;
+  }
   .btn-list {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1383,22 +1386,6 @@ header {
         justify-content: center;
       }
     }
-
-    // .nav-pills .nav-link.active {
-    //   background-color: #343434;
-    //   color: white;
-    // }
-
-    // .nav-pills .nav-link {
-    //   color: #343434;
-    //   transition: ease-in-out 0.3s;
-
-    //   &:hover {
-    //     background-color: #343434;
-    //     color: white;
-    //     margin: auto 5px;
-    //   }
-    // }
   }
 
   .tab-content {
