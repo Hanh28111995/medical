@@ -2670,3 +2670,50 @@ div.animation::after {
             transform: translate3d(21vw, 0vh, 0) rotate(133deg);
   }
 }
+.spinner {
+  position: absolute;
+  display: block;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.spinner::after {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  content: "";
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #00A4EF;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-animation: rotate linear 0.8s infinite;
+          animation: rotate linear 0.8s infinite;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
