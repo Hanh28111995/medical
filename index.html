@@ -143,14 +143,16 @@
                         <h3>ABOUT US</h3>
                     </div>
                     <div class="about-us-vid">
-                        <!-- <video class="video loop-video desktop is-paused w-100" muted="" autoplay="" loop=""
-                            playsinline="" poster="" type="video/mp4" disablepictureinpicture>
-                            <source                            
-                                src="https://drive.google.com/uc?export=download&id=18Aw0vEoXu9vAljyyCVdfyifhy4W9ESrh"
-                                type="video/mp4">
-                        </video>                         -->
-                        <iframe src="https://drive.google.com/file/d/1n2E6fxAohCojFyDCxlqWbGBkztywm6q_/preview" width="640" height="480" allow="autoplay"></iframe>
 
+                        <div class="youtube-container">
+                            <iframe id="youtube-video-1" 
+                            class="youtube-index"
+                                src="https://www.youtube.com/embed/5GTkKz3_3NY?autoplay=1&mute=0&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=5GTkKz3_3NY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <button id="ScrollAndRun">Toggle</button>
                         <!-- <div class="spinner"></div> -->
                     </div>
                     <img src="./asset/image/abstract-blur-hospital-clinic-interior 1.png" alt="" class="w-100">
@@ -216,12 +218,14 @@
             </div>
             <div class="explain-video">
                 <div class="content-vid">
-                    <video class="video loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                        poster="" type="video/mp4">
-                        <!-- <source src="https://drive.google.com/file/d/1pmlMwEP3hU5ij9HzQer8Q9u3WinaF761/view?usp=drive_link"
-                            type="video/mp4"> -->
-                    </video>
-                    <div class="spinner"></div>
+                    <div class="youtube-container">                        
+                        <iframe id="youtube-video-2" class="youtube-index"
+                            src="https://www.youtube.com/embed/BsMAEPp7LEg?autoplay=1&mute=0&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=BsMAEPp7LEg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- <div class="spinner"></div> -->
                 </div>
             </div>
         </div>
@@ -1110,9 +1114,7 @@
 
 
     <!-- button collapse toggle  -->
-    <script>
-
-    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <!-- slick slider -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./asset/lib/slick/slick.min.js"></script>

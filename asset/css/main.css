@@ -34,6 +34,23 @@
   }
 }
 
+.youtube-container {
+	overflow: hidden;
+	width: 100%;
+	/* Keep it the right aspect-ratio */
+	aspect-ratio: 16/9;
+	/* No clicking/hover effects */
+	/* pointer-events: none; */
+	
+	iframe {
+		/* Extend it beyond the viewport... */
+		width: 300%;
+		height: 100%;
+		/* ...and bring it back again */
+		margin-left: calc(-100% - 1px );
+	}
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
