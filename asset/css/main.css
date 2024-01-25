@@ -34,25 +34,22 @@
   }
 }
 
-.youtube-container {
-	overflow: hidden;
-	width: 100%;
-	/* Keep it the right aspect-ratio */
-	aspect-ratio: 16/9;
-	/* No clicking/hover effects */
-	/* pointer-events: none; */
-	
-	iframe {
-		/* Extend it beyond the viewport... */
-		width: 300%;
-		height: 100%;
-		/* ...and bring it back again */
-		margin-left: calc(-100% - 1px );
-	}
-}
-
 body {
   font-family: "Montserrat", sans-serif;
+}
+body .youtube-container {
+  overflow: hidden;
+  width: calc(100% - 1px);
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+  /* No clicking/hover effects */
+}
+body .youtube-container iframe {
+  /* Extend it beyond the viewport... */
+  width: 300%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -100%;
 }
 body p {
   font-size: 16px;
@@ -364,9 +361,9 @@ header .navbar-collapse ul li.active .nav-link {
   position: absolute;
   width: 45%;
   left: 15%;
-  bottom: 5%;
+  bottom: 9%;
 }
-.introduce-banner .row .col-md-9 .about-us-vid video {
+.introduce-banner .row .col-md-9 .about-us-vid .youtube-container {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -631,13 +628,22 @@ header .navbar-collapse ul li.active .nav-link {
   color: #666666;
   font-weight: 500;
 }
-.services-part .services-list-right .services-item .list-item video {
+.services-part .services-list-right .services-item .list-item .youtube-container {
   height: 100%;
+  pointer-events: none;
 }
-.services-part .services-list-right .services-item:nth-of-type(10) .list-item video,
-.services-part .services-list-right .services-item:nth-of-type(8) .list-item video {
-  height: auto;
-  width: 150%;
+.services-part .services-list-right .services-item:nth-of-type(10) .list-item .youtube-container,
+.services-part .services-list-right .services-item:nth-of-type(8) .list-item .youtube-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.services-part .services-list-right .services-item:nth-of-type(10) .list-item .youtube-container iframe,
+.services-part .services-list-right .services-item:nth-of-type(8) .list-item .youtube-container iframe {
+  width: 100%;
+  margin: auto;
+  -webkit-transform: scale(1.6) translateY(-60px);
+          transform: scale(1.6) translateY(-60px);
 }
 .services-part .services-list-right .services-item:nth-of-type(1) .list-item,
 .services-part .services-list-right .services-item:nth-of-type(3) .list-item,
@@ -1498,7 +1504,7 @@ footer .footer-content .footer-item2 ul a li:hover::after {
     width: 100% !important;
     position: static !important;
   }
-  body .introduce-banner .about-us-vid video {
+  body .introduce-banner .about-us-vid .youtube-container {
     width: 100%;
     height: auto !important;
   }
@@ -2690,27 +2696,26 @@ div.animation::after {
 .spinner {
   position: absolute;
   display: block;
-  background-color: whitesmoke;
+  background-image: url("/../asset/image/video-capture-4037.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
-.spinner::after {
+.spinner img {
   position: absolute;
-  top: 40%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
   content: "";
-  border: 8px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #00A4EF;
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 90px;
   border-radius: 50%;
   z-index: 1;
-  -webkit-animation: rotate linear 0.8s infinite;
-          animation: rotate linear 0.8s infinite;
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @-webkit-keyframes rotate {

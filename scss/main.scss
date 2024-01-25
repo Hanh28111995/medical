@@ -7,6 +7,23 @@
 body {
   font-family: 'Montserrat', sans-serif;
 
+  .youtube-container {
+    overflow: hidden;
+    width: calc(100% - 1px);
+    /* Keep it the right aspect-ratio */
+    aspect-ratio: 16/9;
+    /* No clicking/hover effects */
+    // pointer-events: none;
+
+    iframe {
+      /* Extend it beyond the viewport... */
+      width: 300%;
+      height: 100%;
+      /* ...and bring it back again */
+      margin-left: -100%;
+    }
+  }
+
   p {
     font-size: 16px;
   }
@@ -364,9 +381,9 @@ header {
         position: absolute;
         width: 45%;
         left: 15%;
-        bottom: 5%;
+        bottom: 9%;
 
-        video {
+        .youtube-container {
           object-fit: cover;
           object-position: center;
           // width: 100%;
@@ -664,8 +681,9 @@ header {
           }
         }
 
-        video {
+        .youtube-container {
           height: 100%;
+          pointer-events: none;
         }
       }
     }
@@ -673,9 +691,16 @@ header {
     .services-item:nth-of-type(10),
     .services-item:nth-of-type(8) {
       .list-item {
-        video {
-          height: auto;
-          width: 150%;
+        .youtube-container {
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+
+          iframe {
+            width: 100%;
+            margin: auto;
+            transform: scale(1.6) translateY(-60px);
+          }
         }
       }
     }
@@ -1707,7 +1732,7 @@ footer {
         width: 100% !important;
         position: static !important;
 
-        video {
+        .youtube-container {
           width: 100%;
           height: auto !important;
         }
@@ -2933,25 +2958,30 @@ div.animation::after {
 .spinner {
   position: absolute;
   display: block;
-  background-color: whitesmoke;
+  background-image: url('/../asset/image/video-capture-4037.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 
-  &::after {
+  img {
     position: absolute;
-    top: 40%;
-    left: 45%;
+
+    top: 50%;
+    left: 50%;
     content: '';
-    border: 8px solid rgba(0, 0, 0, .1);
-    border-left-color: $bg-color-1;
-    height: 60px;
-    width: 60px;
+    // border: 8px solid rgba(0, 0, 0, .1);
+    // border-left-color: $bg-color-1;
+    height: auto;
+    width: 90px;
     border-radius: 50%;
     z-index: 1;
-    animation: rotate linear 0.8s infinite;
-    animation-delay: 0ms;
+    transform: translate(-50%, -50%);
+    // animation: rotate linear 0.8s infinite;
+    // animation-delay: 0ms;
   }
 }
 

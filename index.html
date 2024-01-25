@@ -143,17 +143,19 @@
                         <h3>ABOUT US</h3>
                     </div>
                     <div class="about-us-vid">
-
                         <div class="youtube-container">
-                            <iframe id="youtube-video-1" 
-                            class="youtube-index"
-                                src="https://www.youtube.com/embed/5GTkKz3_3NY?autoplay=1&mute=0&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=5GTkKz3_3NY"
+                            <iframe id="youtube-video-1" class="youtube-index"
+                                src="https://www.youtube.com/embed/5GTkKz3_3NY?si=ik0LzpqkdIGuLrJ6&autoplay=1&mute=0&loop=0&color=white&controls=0&modestbranding=1&playsinline=1&enablejsapi=1&playlist=5GTkKz3_3NY&rel=0"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen="1"></iframe>
                         </div>
-                        <button id="ScrollAndRun">Toggle</button>
-                        <!-- <div class="spinner"></div> -->
+                        <div class="spinner" id="toggleButton">
+                            <button id="playIcon">
+                                <img src="https://automaticspring.com/wp-content/themes/asp-child/images/video-play-icon.png"
+                                    alt="play video icon png" height="350px">
+                            </button>
+                        </div>
                     </div>
                     <img src="./asset/image/abstract-blur-hospital-clinic-interior 1.png" alt="" class="w-100">
                 </div>
@@ -218,9 +220,9 @@
             </div>
             <div class="explain-video">
                 <div class="content-vid">
-                    <div class="youtube-container">                        
+                    <div class="youtube-container">
                         <iframe id="youtube-video-2" class="youtube-index"
-                            src="https://www.youtube.com/embed/BsMAEPp7LEg?autoplay=1&mute=0&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=BsMAEPp7LEg"
+                            src="https://www.youtube.com/embed/BsMAEPp7LEg?si=m65r_xThB49cYHSg&autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=BsMAEPp7LEg"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -331,18 +333,14 @@
                     </div>
 
                     <div class=" col-6 col-md-4 services-item">
-                        <div class="list-item">
-                            <!-- <video class="loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                                poster="">
-                                <source data-src="./asset/vid/pexels-rodnae-productions-8313056-1920x1080-30fps.mp4"
-                                    src="./asset/vid/pexels-rodnae-productions-8313056-1920x1080-30fps.mp4">
-                            </video> -->
-                            <video class="loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                                poster="" type="video/mp4">
-                                <!-- <source
-                                    src="https://drive.google.com/uc?export=download&id=1NlML7xcous5_DWUCOJoQ9GHm_XaWSS2c"
-                                    type="video/mp4"> -->
-                            </video>
+                        <div class="list-item">                            
+                            <div class="youtube-container">
+                                <iframe id="youtube-video-2" class="youtube-index"
+                                    src="https://www.youtube.com/embed/tsdMkjEvNos?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=tsdMkjEvNos"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -360,12 +358,13 @@
 
                     <div class=" col-6 col-md-4 services-item">
                         <div class="list-item">
-                            <video class="loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                                poster="" type="video/mp4">
-                                <!-- <source
-                                    src="https://drive.google.com/uc?export=download&id=1C670bq4e-s5cg6LfwjB_RBARHgUgReGH"
-                                    type="video/mp4"> -->
-                            </video>
+                            <div class="youtube-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/U0qp2FzEMew?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=U0qp2FzEMew"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -384,12 +383,13 @@
 
                     <div class=" col-6 col-md-4 services-item">
                         <div class="list-item">
-                            <video class="loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                                poster="" type="video/mp4">
-                                <!-- <source
-                                    src="https://drive.google.com/uc?export=download&id=1bScDBc_ocux4Inj2oUYeqHrTKZNflk0K"
-                                    type="video/mp4"> -->
-                            </video>
+                            <div class="youtube-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/6zKDNdaXtwU?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=6zKDNdaXtwU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -409,12 +409,13 @@
 
                     <div class=" col-6 col-md-4 services-item">
                         <div class="list-item">
-                            <video class="loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                                poster="" type="video/mp4">
-                                <!-- <source
-                                    src="https://drive.google.com/uc?export=download&id=1eORJ8bkJoNEpuEK9TMod-g-FeZk4OqYL"
-                                    type="video/mp4"> -->
-                            </video>
+                            <div class="youtube-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/F0TA4W5tGm4?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=F0TA4W5tGm4"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -433,12 +434,13 @@
 
                     <div class=" col-6 col-md-4 services-item">
                         <div class="list-item">
-                            <video class="loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                                width="100%">
-                                <!-- <source
-                                    src="https://drive.google.com/uc?export=download&id=1exR09pAif3LMJzxJPy9A3XlRNbd21ITy"
-                                    type="video/mp4"> -->
-                            </video>
+                            <div class="youtube-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/sXMU2pjWLio?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=sXMU2pjWLio"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -457,12 +459,13 @@
 
                     <div class=" col-6 col-md-4 services-item">
                         <div class="list-item">
-                            <video class="loop-video desktop is-paused" muted="" autoplay="" loop="" playsinline=""
-                                poster="" type="video/mp4">
-                                <!-- <source
-                                    src="https://drive.google.com/uc?export=download&id=1Yud8XB4U8hOgWhHxqYra6zgcK0xFjZyO"
-                                    type="video/mp4"> -->
-                            </video>
+                            <div class="youtube-container">
+                                <iframe
+                                    src="https://www.youtube.com/embed/AGqET9n8fNs?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=AGqET9n8fNs"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
