@@ -40,9 +40,8 @@ body {
 body .youtube-container {
   overflow: hidden;
   width: calc(100% - 1px);
-  /* Keep it the right aspect-ratio */
   aspect-ratio: 16/9;
-  /* No clicking/hover effects */
+  pointer-events: none;
 }
 body .youtube-container iframe {
   /* Extend it beyond the viewport... */
@@ -50,6 +49,17 @@ body .youtube-container iframe {
   height: 100%;
   /* ...and bring it back again */
   margin-left: -100%;
+}
+body #preloader {
+  background-color: #D4F7FF;
+  background-image: url("/../asset/image/myload.gif");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
 }
 body p {
   font-size: 16px;

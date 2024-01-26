@@ -9,11 +9,9 @@ body {
 
   .youtube-container {
     overflow: hidden;
-    width: calc(100% - 1px);
-    /* Keep it the right aspect-ratio */
-    aspect-ratio: 16/9;
-    /* No clicking/hover effects */
-    // pointer-events: none;
+    width: calc(100% - 1px);    
+    aspect-ratio: 16/9;    
+    pointer-events: none;
 
     iframe {
       /* Extend it beyond the viewport... */
@@ -22,6 +20,19 @@ body {
       /* ...and bring it back again */
       margin-left: -100%;
     }
+  }
+
+
+  #preloader{
+    background-color: #D4F7FF;
+    background-image: url('/../asset/image/myload.gif') ;    
+    background-size: auto;
+    background-position: center;    
+    background-repeat: no-repeat ;    
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
   }
 
   p {
